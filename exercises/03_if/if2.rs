@@ -2,13 +2,18 @@
 fn picky_eater(food: &str) -> &str {
     if food == "strawberry" {
         "Yummy!"
+    } else if food == "potato" {
+        "I guess I can eat that."
     } else {
-        1
+        "No thanks!"
     }
 }
 
 fn main() {
-    // You can optionally experiment here.
+    let fruit = String::from("strawberry");
+    let _fruit2 = fruit.as_str();
+
+    picky_eater(_fruit2);
 }
 
 // TODO: Read the tests to understand the desired behavior.
