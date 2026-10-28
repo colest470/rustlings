@@ -1,13 +1,32 @@
 fn trim_me(input: &str) -> &str {
     // TODO: Remove whitespace from both ends of a string.
+
+    input.trim()
 }
 
 fn compose_me(input: &str) -> String {
     // TODO: Add " world!" to the string! There are multiple ways to do this.
+
+    let input1: &str = &(input.to_owned() + " world!");
+    (*input1).to_string()
 }
 
 fn replace_me(input: &str) -> String {
     // TODO: Replace "cars" in the string with "balloons".
+    let string_array: Vec<&str> = (*input).split("cars").collect();
+    let mut final_string: String = String::new();
+
+    println!("{:?}", string_array);
+
+    for (count, element) in (0_i32..).zip(string_array) {
+        final_string.push_str(element);
+
+        if count == 0 {
+            final_string.push_str("balloons");
+        } 
+    }
+
+    final_string
 }
 
 fn main() {
