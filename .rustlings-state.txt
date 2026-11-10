@@ -1,6 +1,6 @@
 DON'T EDIT THIS FILE!
 
-from_str
+errors5
 
 intro1
 intro2
@@ -56,6 +56,7 @@ errors1
 errors2
 errors3
 errors4
+errors5
 errors6
 generics1
 generics2
@@ -92,3 +93,6 @@ clippy2
 clippy3
 using_as
 from_into
+from_str
+try_from_into
+as_ref_mut
